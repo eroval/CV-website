@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+$primary-color: #242424;
+//$secondary-color: #0f1961;
+//$secondary-color: #0D47A1;
+$secondary-color: #2153de;
+$third-color: #9800b3; //#6a007a
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+@mixin transition-ease {
+    transition: all 0.25s ease-in-out
+}
+
+@mixin transition-ease-menu {
+    transition: all 1.00s ease-in-out
+}
+
+@function set-text-color($color){
+    @if (lightness($color)>40%){
+        @return $primary-color;
+    }
+        @else {
+            @return white;
+        }
+}
+
+@function set-border-color($color){
+    @if(lightness($color)>40%){
+        @return 
+        linear-gradient(90deg,
+        rgba(white,0) 15%,
+        rgba($primary-color,0.8) 50%,
+        rgba(white,0) 85%
+        );
+    }
+    @else {
+        @return 
+        linear-gradient(90deg,
+        rgba($primary-color,0) 15%,
+        rgba(white,0.8) 50%,
+        rgba($primary-color,0) 85%
+        );
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px){
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1600px){
+        @content;
+    }
+}
