@@ -1,0 +1,98 @@
+.about{
+    padding-bottom: 2rem;
+
+    &__sexy-stuff{
+        width:100%;
+        padding-bottom:0.05rem;
+        padding-top:0.05rem;
+        text-decoration: none;
+        background: set-border-color($primary-color);
+    }
+
+    &__bio-image{
+        height: 40vh;
+        width: 100%;
+        background:
+         linear-gradient(to left, rgba($primary-color, 0.3), rgba($primary-color, 0.7)),
+         url('../img/me1.jpg') center top;
+         background-size: cover;
+         background-repeat: no-repeat;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: flex-end;
+         
+         .text-secondary{
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: white;
+            text-shadow: 0.35rem 0.35rem 0rem $primary-color;
+          
+        }
+        &-info{
+            width: 100%;
+            text-align: center;
+            font-size:1.7rem;
+            margin-bottom:0.25rem;
+        }
+    }
+
+
+    .jobs{
+        width: 60vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+
+        &__job{
+            background: lighten($primary-color, 10%);
+            padding: 0.5rem;
+            border-bottom: 5px solid $secondary-color;
+
+            h2, h3{
+                margin: 0.5rem 0;
+            }
+
+            h6{
+                margin: 0.3rem 0;
+
+            }
+        }
+    }
+
+    .skills{
+        width: 60vw;
+        margin: 2rem auto 0 auto;
+
+        h2{
+            padding-top: 0.5rem;
+            padding-bottom: 0.25rem;
+        }
+        text-align: center;
+        background: lighten($primary-color, 10%);
+        border-bottom: 5px solid $secondary-color;
+            &__container{
+            margin-top: 0.15rem;
+            margin-bottom: 0.5rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            &__item{
+                font-size: 0.8rem;
+                margin-top: 0.25rem;
+            }
+        }
+    }
+
+    .social-icons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        transform: 
+            rotate(90deg)
+            translate(-3rem, -5rem);
+    }
+}
