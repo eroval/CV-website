@@ -1,0 +1,37 @@
+.home {
+    height: 100%;
+    padding-top: 35vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+        background:
+        linear-gradient(to left, rgba($primary-color, 0.3), rgba($primary-color, 0.7)),
+        url('../img/me1.jpg') center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    &__name{
+      font-size: 5rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+
+       &--last {
+           color: $secondary-color;
+      }
+    }
+    &__sexy-stuff{
+        
+        padding-bottom:0.05rem;
+        padding-top:0.05rem;
+        text-decoration: none;
+        background: set-border-color($primary-color);
+    }
+    
+    &__info{
+        font-size: 2rem;
+        margin-top: 0.5rem;
+            text-shadow: 0.1rem 0.1rem 0rem $primary-color;
+    }
+}
+
+
