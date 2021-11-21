@@ -1,1 +1,1 @@
-### Little personal website I developed, not yet finished. 
+### Little personal website I developed. 
